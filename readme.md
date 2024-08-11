@@ -42,6 +42,7 @@ https://app.codingrooms.com/app/org/bptn-bootcamps-Wikw6pa/course/full-stack-dev
 
 ## Merge Two Sorted Lists
 <h4> Approach and Reasoning behind it </h4>
+
 ##### Logic of First Solution Attempt
 - The first idea was literally just adding all elements to a single list, sorting it and then if being finished
 - Since this is a LinkedList type data structure the 2nd thought was just creating a Linked List Collection and having them be apart of it
