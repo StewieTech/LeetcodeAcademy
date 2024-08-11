@@ -3,16 +3,17 @@
 https://app.codingrooms.com/app/org/bptn-bootcamps-Wikw6pa/course/full-stack-developer-bootcamp%253A-cohort-2-3p7aTai/b/leetcode-problems-qRJ3BCm|
 
 ## Average Salary Excluding the Minimum and Maximum Salary
-#### Approach and Reasoning behind it
+
+<h4> Approach and Reasoning behind it </h4>
 -
-#### Algorithm Explanation
+<h4> Algorithm Explanation </h4>
 -
 
 
 ## Squares of a Sorted Array
-#### Approach and Reasoning behind it
--
-#### Algorithm Explanation
+<h4> Approach and Reasoning behind it <h4/>
+- 
+<h4> Algorithm Explanation </h4>
 -
 
 ## Missing Number
@@ -31,6 +32,7 @@ https://app.codingrooms.com/app/org/bptn-bootcamps-Wikw6pa/course/full-stack-dev
 
 #### Algorithm Explanation
 - To find the missing number in an Array from 0...n we are given an area nums. nums Is turned to an ArrayList for ease of use (unnecessary) by adding each number to an ArrayList called finalList using a for loop. The ArrayList is sorted for easy comparison. A for loop is then created where Two indexes are compared, 1) for the sortedList, 2)  numCounter which increments each for loop. When the indexes don't match we know that's the missing number, and we can return numCounter. We also have a second return statement outside the for loop for the case when the missing number is the last number of the array
+- Algorithm is O(n) due to the for loop
 
 ## Add Two Numbers
 #### Approach and Reasoning behind it
@@ -39,7 +41,16 @@ https://app.codingrooms.com/app/org/bptn-bootcamps-Wikw6pa/course/full-stack-dev
 -
 
 ## Merge Two Sorted Lists
-#### Approach and Reasoning behind it
--
+<h4> Approach and Reasoning behind it </h4>
+##### Logic of First Solution Attempt
+- The first idea was literally just adding all elements to a single list, sorting it and then if being finished
+- Since this is a LinkedList type data structure the 2nd thought was just creating a Linked List Collection and having them be apart of it
+- Since this question requires a List node to be returned it became clear that we would need to custom create a ListNode and then traverse it
+
+##### Logic of Second Solution Attempt
+- Currently, the option that seems the most accessible is traversing both list and adding the values to an ArrayList
+- once it's in an ArrayList, simply turn the data Structure to a LinkedList and return the first number. 
+- If we have to use a ListNode custom data structure, then turn each number in the ArrayList to a ListNode, and connect them
+
 #### Algorithm Explanation
--
+- Two lists that are both lists of ListNodes are required to merged together and return a final merged ListNode lists that's sorted. Each ListNode List is turned into an ArrayList (unnessary but easier to manage) and then added to the final merged arrayList. The List is sorted and then turned back into a ListNode List (Not coded yet).
