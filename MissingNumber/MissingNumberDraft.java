@@ -8,11 +8,11 @@ import java.util.Collections;
 import java.util.List;
 public class MissingNumberDraft {
 
-public static void main(String[] args) {
-//    missingNumberLeet
-    int[] targetArray = {1,2,4,0};
-    missingNumber(targetArray) ;
-}
+//public static void main(String[] args) {
+////    missingNumberLeet
+//    int[] targetArray = {1,2,4,0};
+//    missingNumber(targetArray) ;
+//}
 
     public static void missingNumber(int[] nums) {
 
@@ -23,8 +23,6 @@ public static void main(String[] args) {
         for (int i= 0; i< nums.length; i++) {
 //            System.out.println(i);
             finalList.add(nums[i]);
-
-
         }
         Collections.sort(finalList);
         Integer numCounter = 0;
