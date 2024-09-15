@@ -3,31 +3,34 @@
 from collections import OrderedDict
 
 
-class LRUcache:
+class LRUCache:
     def __init__ (self, capacity: int):
-        self.cache = OrderedDict();
+        # self.cache = OrderedDict();
+        self.cache = {};
         self.capacity = capacity;
 
     def get(self, key: int) -> int:
         if key not in self.cache:
             return - 1;
-        self.cache.move_to_end(key);
-        return self.cache[key;]
+        value = self.cache.pop(key);
+        self.cache[key] = value;
+        # self.cache.move_to_end(key);
+        return self.cache[key]
 
     def put(self, key: int, value: int) -> None:
         if key in self.cache:
             self.cache.move_to_end(key);
-            self.cache[key] = value;
-            if len(self.cache) > self.capacity:
+        self.cache[key] = value;
+        if len(self.cache) > self.capacity:
 
-                self.cache.popitem(last = False)
+            self.cache.popitem(last = False)
+            self.cache.popitem()
 
 
 class Node:
     def __init__(self, key, val):
         self.key, self.val = key, val
         self.prev = self.next = None
-
 
 class LRUCache:
     def __init__(self, capacity: int):
